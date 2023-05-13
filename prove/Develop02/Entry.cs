@@ -1,7 +1,11 @@
+using System;
+using System.IO;
+using System.Text;
+
 public class Entry{
-    string _promptGiven;
-    string _userEntry;
-    string _date;
+    public string _promptGiven = "";
+    public string _userEntry = "";
+    public string _date = "";
 
     public void _Display(){
         Console.WriteLine($"{_date}");
@@ -9,4 +13,11 @@ public class Entry{
         Console.WriteLine($"{_userEntry}");
         Console.WriteLine(" ");
     }
+
+    public void _writeFile(StreamWriter outputFile){
+        outputFile.WriteLine($"{_date}");
+        outputFile.WriteLine($"{_promptGiven}");
+        outputFile.WriteLine($"{_userEntry}");
+    }
+
 }

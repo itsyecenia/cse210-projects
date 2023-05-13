@@ -1,11 +1,18 @@
 public class Prompt{
-    List <string> _prompts = new List<string>();
+    public string[] listPrompts;
+    string prompt;
 
-    public void _getPrompts(){
+    public void _savePrompts(){
         string filename = "prompts.txt";
-        _prompts = System.IO.File.ReadAllLines(filename);
+        listPrompts = System.IO.File.ReadAllLines(filename);
+    }
+
+    public string _getPrompt(int x){
+        prompt = listPrompts[x];
+        return prompt;
     }
     public void _promptDisplay(int x){
-        Console.WriteLine($"{_prompt[x]}");
+        _getPrompt(x);
+        Console.WriteLine($"{prompt}");
     }
 }
