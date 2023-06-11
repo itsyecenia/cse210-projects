@@ -37,7 +37,18 @@ class Program
                 reflecting._displayQuestions(reflecting._getDuration());
                 reflecting._DisplayEndingingMessage();
             }
-            else if (choice == 3){/* Didn't finish on time */}
+            else if (choice == 3){
+                /* Didn't finish on time */
+                Console.Clear();
+                string listingName = "Listing Activity";
+                string listingDescription = "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.";
+                ListingActivity listing = new ListingActivity(listingName, listingDescription);
+
+                listing._DisplayStartingMessage();
+                listing._displayRandPromptList();
+
+                listing._DisplayEndingingMessage();
+            }
             else if (choice == 4){/* Will Quit */}
         }
     }
