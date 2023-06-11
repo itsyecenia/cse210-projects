@@ -2,11 +2,7 @@ public class BreathingActivity : Activity{
     protected string _breathingName;
     protected string _breathingDescription;
 
-    public BreathingActivity(string breathingName, string breathingDescription) : base(breathingName, breathingDescription ){
-        breathingName = "Breathing Activity";
-        breathingDescription = "This activity will help you relax by walking you through beathing in and out slowly. Clear your mind and focus on your breathing";
-        
-    }
+    public BreathingActivity(string breathingName, string breathingDescription) : base(breathingName, breathingDescription ){}
     public void _displayBreathe(int totalSecs){
         Console.Clear();
         Console.WriteLine("Get ready...");
