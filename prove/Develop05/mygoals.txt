@@ -1,0 +1,6 @@
+1120
+SimpleGoal:hello\I love you\15\False
+EternalGoal:Temple\Go to the temple\50
+ChecklistGoal:Te amo\Tell that to my wife before she does\10\10000\1000\0
+SimpleGoal:Eat at the Habit\I want to eat at the Habit for a while now\100\True
+ChecklistGoal:walk up stairs\go up and down stairs\10\1000\2\2
