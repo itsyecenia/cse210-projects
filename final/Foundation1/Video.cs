@@ -15,11 +15,12 @@ public class Videos{
     }
 
     public int _commentCount(){
-        int i = 0;
-        foreach (Comment comment in _comment){
-            i++;
-        }
-        return i;
+        // int i = 0;
+        // foreach (Comment comment in _comment){
+        //     i++;
+        // }
+        // return i;
+        return _comment.Count;
     }
 
     public void _displayComments(){
